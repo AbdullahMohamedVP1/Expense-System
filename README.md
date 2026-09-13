@@ -45,8 +45,8 @@ The application is designed for anyone who wants to manage their budget and keep
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/AbdullahMohamedVP1/Expense-management-System.git
-cd Expense-management-System
+git clone https://github.com/AbdullahMohamedVP1/Expense-System.git
+cd Expense-System
 ```
 
 ### 2. Backend Setup
@@ -230,7 +230,7 @@ https://www.figma.com/design/rIPsg7fCX9WSUyfkF6LXWD/Untitled
 #### Member 1 — Mohamed Shehab — Authentication & Setup
 
 - React project setup
-- Tailwind CSS and dependencies
+- Bootstrap and dependencies
 - Routing
 - Login and Sign Up UI
 - Profile photo selector
