@@ -126,7 +126,7 @@ Base URL:
 | POST   | `/register`     | Register a new user                      | No             |
 | POST   | `/login`        | Login user and authenticate using JWT    | No             |
 | GET    | `/getUser`      | Get the authenticated user's information | Yes            |
-| POST   | `/upload-image` | Upload a user profile image              | No             |
+| POST   | `/upload-image` | Upload a user profile image              | Yes            |
 
 ### Income APIs
 
