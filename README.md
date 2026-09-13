@@ -54,7 +54,7 @@ cd Expense-System
 Navigate to the backend folder:
 
 ```bash
-cd backend
+cd Backend
 ```
 
 Install the required dependencies:
