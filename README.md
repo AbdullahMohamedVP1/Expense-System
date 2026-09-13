@@ -173,8 +173,6 @@ Base URL:
 > **Note:** Protected endpoints require a valid JWT authentication token.
 
 ## UI/UX Design
-### Member 1 : Ahmed Saeed
-### Member 2 : Belal Omar
 Figma Design:
 https://www.figma.com/design/rIPsg7fCX9WSUyfkF6LXWD/Untitled
 
@@ -227,7 +225,52 @@ https://www.figma.com/design/rIPsg7fCX9WSUyfkF6LXWD/Untitled
 * Configured image storage and file type validation for uploaded profile images.
 * Integrated the protected Dashboard route using JWT authentication.
 
+### Frontend Team
 
+#### Member 1 — Mohamed Shehab — Authentication & Setup
+
+- React project setup
+- Tailwind CSS and dependencies
+- Routing
+- Login and Sign Up UI
+- Profile photo selector
+- Login API integration
+- Sign Up API integration
+
+#### Member 2 — Bassem Tarek — Dashboard
+
+- Dashboard layout
+- Summary cards
+- Recent transactions
+- Financial overview
+- Pie charts
+- Bar charts
+- Expense overview
+
+#### Member 3 — Alaa Antar — Income Management
+
+- Income details and overview
+- Add income form
+- Income API integration
+- Income list
+- Delete income
+- Income Excel download
+
+#### Member 4 — Mohamed Saber — Expense Management & API Setup
+
+- API paths
+- Axios setup
+- Expense overview
+- Add expense form
+- Expense list
+- Delete expense
+- Get expenses API
+- Expense Excel download
+
+### UI/UX Team
+
+#### Member — Ahmed Saeed — UI/UX Design
+#### Member — Belal Omar — UI/UX Design
 ## Demo Links
 
 ### Frontend Demo
