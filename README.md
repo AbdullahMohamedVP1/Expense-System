@@ -40,3 +40,211 @@ The application is designed for anyone who wants to manage their budget and keep
 * Git
 * GitHub
 
+## Installation Steps
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/AbdullahMohamedVP1/Expense-management-System.git
+cd Expense-management-System
+```
+
+### 2. Backend Setup
+
+Navigate to the backend folder:
+
+```bash
+cd backend
+```
+
+Install the required dependencies:
+
+```bash
+npm install
+```
+
+Create a `.env` file inside the `backend` folder and add the required environment variables:
+
+```env
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+PORT=5000
+```
+
+Start the backend server:
+
+```bash
+npm start
+```
+
+For development with Nodemon:
+
+```bash
+npm run dev
+```
+
+### 3. Frontend Setup
+
+Open a new terminal and navigate to the frontend folder:
+
+```bash
+cd frontend
+```
+
+Install the required dependencies:
+
+```bash
+npm install
+```
+
+Start the frontend development server:
+
+```bash
+npm run dev
+```
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+## API Overview
+
+The application provides RESTful APIs for authentication, income management, expense management, and dashboard data.
+
+### Authentication APIs
+
+Base URL:
+
+```text
+/api/v1/auth
+```
+
+| Method | Endpoint        | Description                              | Authentication |
+| ------ | --------------- | ---------------------------------------- | -------------- |
+| POST   | `/register`     | Register a new user                      | No             |
+| POST   | `/login`        | Login user and authenticate using JWT    | No             |
+| GET    | `/getUser`      | Get the authenticated user's information | Yes            |
+| POST   | `/upload-image` | Upload a user profile image              | No             |
+
+### Income APIs
+
+Base URL:
+
+```text
+/api/v1/income
+```
+
+| Method | Endpoint  | Description                 | Authentication |
+| ------ | --------- | --------------------------- | -------------- |
+| POST   | `/`       | Add a new income record     | Yes            |
+| GET    | `/`       | Get all income records      | Yes            |
+| GET    | `/export` | Export income data to Excel | Yes            |
+| DELETE | `/:id`    | Delete an income record     | Yes            |
+
+### Expense APIs
+
+Base URL:
+
+```text
+/api/v1/expense
+```
+
+| Method | Endpoint         | Description                  | Authentication |
+| ------ | ---------------- | ---------------------------- | -------------- |
+| POST   | `/add`           | Add a new expense record     | Yes            |
+| GET    | `/get`           | Get all expense records      | Yes            |
+| GET    | `/downloadexcel` | Export expense data to Excel | Yes            |
+| DELETE | `/:id`           | Delete an expense record     | Yes            |
+
+### Dashboard API
+
+Base URL:
+
+```text
+/api/v1/dashboard
+```
+
+| Method | Endpoint | Description                                 | Authentication |
+| ------ | -------- | ------------------------------------------- | -------------- |
+| GET    | `/`      | Get dashboard financial data and statistics | Yes            |
+
+> **Note:** Protected endpoints require a valid JWT authentication token.
+
+## UI/UX Design
+### Member 1 : Ahmed Saeed
+### Member 2 : Belal Omar
+Figma Design:
+https://www.figma.com/design/rIPsg7fCX9WSUyfkF6LXWD/Untitled
+
+## Team Members and Contributions
+
+### Backend Team
+
+#### Member 1 — Khaled Kamal — Expense Management
+
+* Developed the Expense Management APIs.
+* Implemented adding new expense records.
+* Implemented retrieving expense records for the authenticated user.
+* Implemented deleting expense records.
+* Implemented exporting expense records to Excel using the XLSX library.
+* Added validation for required expense fields.
+* Implemented the Expense Mongoose model with fields for category, amount, date, and icon.
+
+#### Member 2 — Rahma Mahmoud — Setup & Authentication
+
+* Worked on the backend project setup and authentication functionality.
+* Implemented user registration and login.
+* Implemented JWT token generation and authentication.
+* Implemented protected user information retrieval.
+* Implemented password hashing using bcryptjs.
+* Implemented password comparison during login.
+* Developed the authentication middleware for verifying JWT tokens.
+* Implemented the User Mongoose model.
+* Added validation for required registration and login fields.
+* Implemented email uniqueness checking during registration.
+
+#### Member 3 — Menna Allah Tamer — Income Management
+
+* Developed the Income Management APIs.
+* Implemented adding new income records.
+* Implemented retrieving income records for the authenticated user.
+* Implemented deleting income records with user ownership verification.
+* Implemented exporting income records to Excel using ExcelJS.
+* Added validation for required income fields.
+* Implemented the Income Mongoose model with fields for source, amount, date, and icon.
+
+#### Member 4 — Abdullah Mohamed — Dashboard & Uploads
+
+* Developed the Dashboard API for retrieving financial statistics.
+* Implemented MongoDB aggregation using `$match`, `$group`, and `$sum` to calculate total income and expenses.
+* Implemented total balance calculation based on income and expenses.
+* Implemented 30-day expense and 60-day income statistics.
+* Implemented recent transactions retrieval and sorting.
+* Used JavaScript `reduce()` for financial calculations.
+* Implemented profile image upload functionality using Multer.
+* Configured image storage and file type validation for uploaded profile images.
+* Integrated the protected Dashboard route using JWT authentication.
+
+
+## Demo Links
+
+### Frontend Demo
+
+> To be added if deployed.
+
+### Backend/API
+
+> To be added if deployed.
+
+## Database Diagram / ERD
+
+> ERD will be added here.
+
+## AI Tools Used
+
+* **ChatGPT** – Used as a development assistant for code explanations, debugging, troubleshooting, documentation, and development suggestions.
+* All AI-assisted code and suggestions were reviewed, tested, and understood by the team before being used in the project.
+* The team remains responsible for the correctness, security, quality, and understanding of the final code.
+
