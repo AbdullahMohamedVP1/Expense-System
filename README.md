@@ -281,9 +281,9 @@ https://www.figma.com/design/rIPsg7fCX9WSUyfkF6LXWD/Untitled
 
 > To be added if deployed.
 
-## Database Diagram / ERD
+## ERD (Entity Relationship Diagram)
 
-> ERD will be added here.
+![ERD Diagram](docs/ERD%20Diagram.png)
 
 ## AI Tools Used
 
