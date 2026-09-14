@@ -180,49 +180,49 @@ https://www.figma.com/design/rIPsg7fCX9WSUyfkF6LXWD/Untitled
 
 ### Backend Team
 
-#### Member 1 — Khaled Kamal — Expense Management
-
-* Developed the Expense Management APIs.
-* Implemented adding new expense records.
-* Implemented retrieving expense records for the authenticated user.
-* Implemented deleting expense records.
-* Implemented exporting expense records to Excel using the XLSX library.
-* Added validation for required expense fields.
-* Implemented the Expense Mongoose model with fields for category, amount, date, and icon.
-
-#### Member 2 — Rahma Mahmoud — Setup & Authentication
+#### Member 1 — Khaled Kamal — Setup & Authentication
 
 * Worked on the backend project setup and authentication functionality.
 * Implemented user registration and login.
 * Implemented JWT token generation and authentication.
-* Implemented protected user information retrieval.
+* Implemented the User Mongoose model.
 * Implemented password hashing using bcryptjs.
 * Implemented password comparison during login.
 * Developed the authentication middleware for verifying JWT tokens.
-* Implemented the User Mongoose model.
-* Added validation for required registration and login fields.
+* Added validation for registration and login fields.
 * Implemented email uniqueness checking during registration.
 
-#### Member 3 — Menna Allah Tamer — Income Management
+#### Member 2 — Rahma Mahmoud — Income Management
 
 * Developed the Income Management APIs.
 * Implemented adding new income records.
-* Implemented retrieving income records for the authenticated user.
-* Implemented deleting income records with user ownership verification.
+* Implemented retrieving income records.
+* Implemented deleting income records.
 * Implemented exporting income records to Excel using ExcelJS.
-* Added validation for required income fields.
-* Implemented the Income Mongoose model with fields for source, amount, date, and icon.
+* Added validation for income fields.
+* Implemented the Income Mongoose model.
+
+#### Member 3 — Menna Allah Tamer — Expense Management
+
+* Developed the Expense Management APIs.
+* Implemented adding new expense records.
+* Implemented retrieving expense records.
+* Implemented deleting expense records.
+* Implemented exporting expense records to Excel using the XLSX library.
+* Added validation for expense fields.
+* Implemented the Expense Mongoose model.
 
 #### Member 4 — Abdullah Mohamed — Dashboard & Uploads
 
 * Developed the Dashboard API for retrieving financial statistics.
-* Implemented MongoDB aggregation using `$match`, `$group`, and `$sum` to calculate total income and expenses.
-* Implemented total balance calculation based on income and expenses.
+* Implemented MongoDB aggregation using `$match`, `$group`, and `$sum`.
+* Implemented total income and expense calculations.
+* Implemented total balance calculation.
 * Implemented 30-day expense and 60-day income statistics.
 * Implemented recent transactions retrieval and sorting.
 * Used JavaScript `reduce()` for financial calculations.
 * Implemented profile image upload functionality using Multer.
-* Configured image storage and file type validation for uploaded profile images.
+* Configured image storage and file type validation.
 * Integrated the protected Dashboard route using JWT authentication.
 
 ### Frontend Team
