@@ -136,12 +136,12 @@ Base URL:
 /api/v1/income
 ```
 
-| Method | Endpoint  | Description                 | Authentication |
-| ------ | --------- | --------------------------- | -------------- |
-| POST   | `/`       | Add a new income record     | Yes            |
-| GET    | `/`       | Get all income records      | Yes            |
-| GET    | `/export` | Export income data to Excel | Yes            |
-| DELETE | `/:id`    | Delete an income record     | Yes            |
+| Method | Endpoint         | Description                 | Authentication |
+| ------ | ---------------- | --------------------------- | -------------- |
+| POST   | `/add`           | Add a new income record     | Yes            |
+| GET    | `/get`           | Get all income records      | Yes            |
+| GET    | `/downloadexcel` | Export income data to Excel | Yes            |
+| DELETE | `/:id`            | Delete an income record     | Yes           |
 
 ### Expense APIs
 
@@ -171,6 +171,12 @@ Base URL:
 | GET    | `/`      | Get dashboard financial data and statistics | Yes            |
 
 > **Note:** Protected endpoints require a valid JWT authentication token.
+
+## API Documentation
+
+API documentation is provided to describe the available backend endpoints, request methods, authentication requirements, and expected responses.
+
+> Postman API documentation will be added to the repository.
 
 ## UI/UX Design
 Figma Design:
@@ -271,6 +277,22 @@ https://www.figma.com/design/rIPsg7fCX9WSUyfkF6LXWD/Untitled
 
 #### Member — Ahmed Saeed — UI/UX Design
 #### Member — Belal Omar — UI/UX Design
+
+## Testing
+
+The application was tested to verify the main functionalities of the system, including:
+
+- User registration and login
+- JWT authentication and protected routes
+- Adding, retrieving, and deleting income records
+- Adding, retrieving, and deleting expense records
+- Dashboard financial calculations
+- Profile image upload
+- Excel export functionality
+- API request and response validation
+
+> Test documentation will be added to the repository.
+
 ## Demo Links
 
 ### Frontend Demo
