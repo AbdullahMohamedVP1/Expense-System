@@ -282,7 +282,7 @@ https://www.figma.com/design/rIPsg7fCX9WSUyfkF6LXWD/Untitled
 
 A structured testing guide is provided to verify the main application features, including authentication, income and expense management, dashboard calculations, data export, and record deletion.
 
-[Test Guide](docs/Test%20Guide.pdf)
+[Test Guide](docs/Test%20Guide%20.pdf)
 
 ## Demo Links
 
