@@ -1,0 +1,10 @@
+### Upload Image Test
+POST http://localhost:8000/api/v1/auth/upload-image
+Content-Type: multipart/form-data; boundary=MyBoundary
+
+--MyBoundary
+Content-Disposition: form-data; name="image"; filename="test.jpg"
+Content-Type: image/jpeg
+
+< ./uploads/test.jpg
+--MyBoundary--

@@ -1,0 +1,31 @@
+### Login User 1
+POST http://localhost:8000/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "khaled@example.com",
+  "password": "YOUR_PASSWORD"
+}
+
+###
+
+### Login User 2
+POST http://localhost:8000/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "khaled2@example.com",
+  "password": "YOUR_PASSWORD"
+}
+
+###
+
+### Get User (khaled@example.com)
+GET http://localhost:8000/api/v1/auth/getUser
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhOWQyYzUzNDMwYzZhOTA1NDhjMmM5ZiIsImlhdCI6MTc4ODY4NTkxMSwiZXhwIjoxNzg4Njg5NTExfQ.phAKFsMp9_qdorhc0HRtBr4JRAzT8oKnHiJVB_5pvx0
+
+###
+
+### Get User (khaled2@example.com)
+GET http://localhost:8000/api/v1/auth/getUser
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhOWQyZDczNDMwYzZhOTA1NDhjMmNhMyIsImlhdCI6MTc4ODY4NTY4MywiZXhwIjoxNzg4Njg5MjgzfQ.exNXDvj_5kvvoURbyR-yrQw_2Cta-DLdAVuXzGEWYHA
