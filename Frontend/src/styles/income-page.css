@@ -1,0 +1,634 @@
+.income-page {
+  min-height: 100vh;
+  padding: 30px;
+  background: #f8f9fc;
+}
+
+
+
+.income-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.income-header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #20242b;
+}
+
+.income-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.search-box {
+  width: 230px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 14px;
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+}
+
+.search-box span {
+  margin-right: 8px;
+  color: #6b7280;
+}
+
+.search-box input {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  font-size: 13px;
+}
+
+.icon-btn {
+  border: none;
+  background: transparent;
+
+  font-size: 18px;
+  color: #6b7280;
+
+  cursor: pointer;
+}
+
+
+
+.overview-section {
+  width: 100%;
+}
+
+.overview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.overview-header h3 {
+  margin: 0 0 5px;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  color: #20242b;
+}
+
+.overview-header p {
+  margin: 0;
+
+  color: #8b8f98;
+  font-size: 14px;
+}
+
+.overview-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.overview-buttons .btn {
+  min-height: 40px;
+  border-radius: 7px;
+  font-size: 13px;
+}
+
+
+
+.income-chart-card {
+  width: 100%;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+  border-radius: 14px;
+
+  padding: 25px;
+
+  margin-top: 20px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.income-chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-bottom: 25px;
+}
+
+.income-chart-header h4 {
+  margin: 0 0 5px;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  color: #20242b;
+}
+
+.income-chart-header p {
+  margin: 0;
+
+  font-size: 12px;
+  color: #999999;
+}
+
+.total-income {
+  text-align: right;
+}
+
+.total-income span {
+  display: block;
+
+  margin-bottom: 3px;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  color: #999999;
+  letter-spacing: 0.5px;
+}
+
+.total-income strong {
+  font-size: 23px;
+  font-weight: 700;
+
+  color: #16805e;
+}
+
+
+
+.bar-chart {
+  display: flex;
+
+  width: 100%;
+  height: 260px;
+}
+
+.bar-y-axis {
+  width: 40px;
+  height: 220px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-size: 10px;
+  color: #999999;
+}
+
+.bar-chart-content {
+  position: relative;
+
+  flex: 1;
+  height: 250px;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.bars {
+  height: 220px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+
+  padding: 0 20px;
+}
+
+.bar-item {
+  width: 45px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bar {
+  width: 32px;
+
+  min-height: 4px;
+
+  background: #35c997;
+
+  border-radius: 5px 5px 0 0;
+
+  transition:
+    height 0.3s ease,
+    opacity 0.2s ease;
+}
+
+.bar:hover {
+  opacity: 0.8;
+}
+
+.bar-label {
+  margin-top: 8px;
+
+  font-size: 10px;
+  color: #999999;
+}
+
+
+
+.recent-income {
+  margin-top: 35px;
+}
+
+.recent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 18px;
+}
+
+.recent-header h3 {
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  color: #20242b;
+}
+
+.view-all {
+  border: none;
+  background: transparent;
+
+  color: #6366f1;
+
+  font-size: 13px;
+
+  cursor: pointer;
+}
+
+
+
+.income-card {
+  position: relative;
+
+  width: 100%;
+  min-height: 145px;
+
+  padding: 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.income-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+}
+
+.income-card-content {
+  position: relative;
+
+  display: block;
+
+  padding-right: 45px;
+}
+
+
+
+.income-card-content h5 {
+  margin: 0 0 8px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  color: #20242b;
+}
+
+.income-date {
+  margin: 0 0 12px;
+
+  font-size: 11px;
+  color: #999999;
+}
+
+.income-category {
+  display: inline-block;
+
+  padding: 4px 9px;
+
+  background: #eef8f3;
+
+  color: #16805e;
+
+  border-radius: 5px;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.income-amount {
+  display: block;
+
+  margin-top: 18px;
+
+  font-size: 19px;
+  font-weight: 700;
+
+  color: #16805e;
+
+  white-space: nowrap;
+}
+
+
+
+.delete-income-btn {
+  position: absolute;
+
+  top: 12px;
+  right: 12px;
+
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  border-radius: 7px;
+
+  background: transparent;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  z-index: 10;
+
+  transition: background 0.2s ease;
+}
+
+.delete-income-btn:hover {
+  background: #f8d7da;
+}
+
+
+
+.add-source-card {
+  min-height: 145px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  background: #ffffff;
+
+  border: 2px dashed #d9dce3;
+  border-radius: 12px;
+
+  color: #8b8f98;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.add-source-card:hover {
+  border-color: #35c997;
+  color: #16805e;
+}
+
+.add-source-icon {
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f0f8f5;
+
+  font-size: 24px;
+}
+
+
+
+.modal-backdrop-custom {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  z-index: 9999;
+}
+
+.add-income-modal {
+  width: 100%;
+  max-width: 480px;
+
+  padding: 24px;
+
+  background: #ffffff;
+
+  border-radius: 14px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-bottom: 25px;
+}
+
+.modal-header-custom h4 {
+  margin: 0 0 5px;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.modal-header-custom p {
+  margin: 0;
+
+  color: #999999;
+  font-size: 13px;
+}
+
+.close-modal {
+  border: none;
+  background: transparent;
+
+  color: #777777;
+
+  font-size: 28px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.add-income-modal .form-label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.add-income-modal .form-control,
+.add-income-modal .form-select {
+  min-height: 42px;
+
+  border-radius: 8px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .income-page {
+    padding: 20px;
+  }
+
+  .income-header {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  .income-actions {
+    width: 100%;
+  }
+
+  .search-box {
+    flex: 1;
+  }
+
+  .overview-header {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .overview-buttons {
+    width: 100%;
+  }
+
+  .overview-buttons button {
+    flex: 1;
+  }
+
+  .income-chart-header {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .total-income {
+    text-align: left;
+  }
+
+  .income-card {
+    min-height: 140px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .income-page {
+    padding: 15px;
+  }
+
+  .income-header h2 {
+    font-size: 21px;
+  }
+
+  .overview-header h3 {
+    font-size: 20px;
+  }
+
+  .overview-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .overview-buttons button {
+    width: 100%;
+  }
+
+  .income-chart-card {
+    padding: 18px;
+  }
+
+  .bars {
+    padding: 0 5px;
+  }
+
+  .bar-item {
+    width: 30px;
+  }
+
+  .bar {
+    width: 22px;
+  }
+
+  .add-income-modal {
+    padding: 18px;
+  }
+
+  .modal-actions {
+    flex-direction: column-reverse;
+  }
+
+  .modal-actions button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,91 @@
+.app-sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 1500;
+  width: 248px;
+  padding: 25px 16px 18px;
+  background: #fff;
+  border-right: 1px solid #ededf5;
+  box-shadow: 8px 0 28px rgba(47, 52, 90, .035);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 3px 10px 27px;
+  border-bottom: 1px solid #f0f0f6;
+}
+.sidebar-brand-icon {
+  width: 39px;
+  height: 39px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: #5149d8;
+  box-shadow: 0 8px 18px rgba(81, 73, 216, .2);
+}
+.sidebar-brand strong { display:block; color:#252944; font-size:16px; letter-spacing:-.02em; }
+.sidebar-brand span { display:block; color:#9a9eb3; font-size:7px; font-weight:800; letter-spacing:.12em; margin-top:3px; }
+
+.sidebar-nav { padding-top: 26px; }
+.sidebar-section-label {
+  display: block;
+  padding: 0 13px 9px;
+  color: #a2a5b8;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .13em;
+}
+.sidebar-link {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-height:46px;
+  margin:4px 0;
+  padding:0 13px;
+  border-radius:12px;
+  color:#777c96;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:700;
+  transition:.18s ease;
+}
+.sidebar-link:hover { background:#f5f5fb; color:#5149d8; }
+.sidebar-link.active { background:#efeffc; color:#5149d8; box-shadow: inset 3px 0 0 #5149d8; }
+
+.sidebar-bottom { margin-top:auto; }
+.sidebar-logout {
+  width:100%;
+  min-height:44px;
+  border:0;
+  border-radius:12px;
+  background:#fff4f5;
+  color:#c95363;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:0 13px;
+  font-size:13px;
+  font-weight:700;
+  cursor:pointer;
+}
+.sidebar-logout:hover { background:#ffe9ec; }
+.sidebar-footer {
+  color:#b0b3c2;
+  font-size:7px;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-align:center;
+  margin-top:14px;
+}
+
+@media (max-width: 800px) {
+  .app-sidebar { width: 76px; padding: 18px 9px; }
+  .sidebar-brand { justify-content:center; padding:3px 0 20px; }
+  .sidebar-brand > div:last-child, .sidebar-section-label, .sidebar-link span, .sidebar-logout span, .sidebar-footer { display:none; }
+  .sidebar-link, .sidebar-logout { justify-content:center; padding:0; }
+}
