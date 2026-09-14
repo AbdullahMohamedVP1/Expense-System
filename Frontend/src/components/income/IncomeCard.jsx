@@ -3,7 +3,7 @@ import { Trash2 } from 'lucide-react';
 function IncomeCard({ title, date, category, amount, onDelete, deleting }) {
   return (
     <div className="income-card">
-      {/* Delete Button */}
+      {/* Delete */}
       <button
         type="button"
         className="delete-income-btn"
