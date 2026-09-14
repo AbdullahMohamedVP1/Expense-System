@@ -174,9 +174,9 @@ Base URL:
 
 ## API Documentation
 
-API documentation is provided to describe the available backend endpoints, request methods, authentication requirements, and expected responses.
+The complete API documentation is available here:
 
-> Postman API documentation will be added to the repository.
+[API Documentation](docs/API%20Documentation.pdf)
 
 ## UI/UX Design
 Figma Design:
@@ -280,18 +280,9 @@ https://www.figma.com/design/rIPsg7fCX9WSUyfkF6LXWD/Untitled
 
 ## Testing
 
-The application was tested to verify the main functionalities of the system, including:
+A structured testing guide is provided to verify the main application features, including authentication, income and expense management, dashboard calculations, data export, and record deletion.
 
-- User registration and login
-- JWT authentication and protected routes
-- Adding, retrieving, and deleting income records
-- Adding, retrieving, and deleting expense records
-- Dashboard financial calculations
-- Profile image upload
-- Excel export functionality
-- API request and response validation
-
-> Test documentation will be added to the repository.
+[Test Guide](docs/Test%20Guide.pdf)
 
 ## Demo Links
 
