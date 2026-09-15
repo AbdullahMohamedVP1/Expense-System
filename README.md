@@ -17,6 +17,10 @@ The application is designed for anyone who wants to manage their budget and keep
 * **Intuitive Navigation** – Easily navigate between Dashboard, Income, Expenses, and Logout.
 * **Transaction Deletion** – Easily delete income and expense records when needed.
 
+## GitHub Repository
+
+https://github.com/AbdullahMohamedVP1/Expense-System
+
 
 ## Technologies Used
 
